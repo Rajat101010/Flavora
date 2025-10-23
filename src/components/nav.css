@@ -1,0 +1,73 @@
+.nav_parent {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media(max-width: 768px) {
+    .nav_parent {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 8px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.nav_div1,
+.nav_div2,
+.nav_div3,
+.nav_div4,
+.nav_div5,
+.nav_div6,
+.nav_div7 {
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.nav_div1:hover {
+    background-color: #353535;
+}
+
+.nav_div2:hover {
+    background-color: #353535;
+}
+
+.nav_div3:hover {
+    background-color: #353535;
+}
+
+.nav_div4:hover {
+    background-color: #353535;
+}
+
+.nav_div5:hover {
+    background-color: #353535;
+}
+
+.nav_div6:hover {
+    background-color: #353535;
+}
+
+.nav_div7:hover {
+    background-color: #353535;
+}
+
+.active {
+    background-color: #1F1F1F;
+}
+
+.hr_for_all_Pages{
+    height: 1px;
+}
+
+.weel_links{
+    text-decoration: none;
+    color: white;
+}

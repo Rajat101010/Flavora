@@ -1,0 +1,16 @@
+.footer_for_all_pages {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer_parent{
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    background-color: #2F2F2F;
+}
+
+.footer_end_message{
+    font-size: 1rem;
+    color: #A9A9A9;
+}
