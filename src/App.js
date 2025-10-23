@@ -15,7 +15,7 @@ import Sunday from './pages/sunday';
 
 function App() {
   return (
-    <main style={{ backgroundColor: "#2F2F2F", height: "auto", color: "white"}}>
+    <main style={{ backgroundColor: "#2F2F2F", height: "auto", minHeight:'100vh',  color: "white"}}>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />

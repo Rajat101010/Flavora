@@ -6,7 +6,6 @@ function NormalBody() {
             <center>
                 <div className="normal_body_parent">
                     <img src={Logo} alt="logo" className="normal_body_watermark" />
-                    <br />
                 </div>
             </center>
         </main>
