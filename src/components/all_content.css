@@ -28,17 +28,24 @@
     text-align: left;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
+
 }
 
-.menu_title_name{
+.menu_title_name {
     font-weight: 500;
     font-size: 1.2rem;
 }
 
-.menu_description{
+.menu_description {
     font-size: 1rem;
     font-weight: 100;
+}
+
+@media(max-width: 768px) {
+    .menu_description {
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
 }
 
 
@@ -46,6 +53,6 @@
     grid-column: span 2 / span 2;
 }
 
-.menu_sub_part_div2{
+.menu_sub_part_div2 {
     text-align: right;
 }
