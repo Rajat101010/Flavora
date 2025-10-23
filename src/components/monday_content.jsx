@@ -17,7 +17,7 @@ function MondayContent() {
                         <div className="menu_sub_part_div3">
                             <font className='menu_description'>
                                 <ul>
-                                    <li>Puru Ghuguni</li>
+                                    <li>Puri Ghuguni</li>
                                     <li>Corn Flakes, Milk, Banana</li>
                                     <li>Tea</li>
                                 </ul>
