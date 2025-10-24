@@ -5,6 +5,8 @@ import '../components/header.css'
 import Nav from '../components/nav';
 import '../components/nav.css'
 
+import TitleText from '../components/title_text_info';
+
 import InfoBody from '../components/info_body';
 import '../components/info_body.css'
 
@@ -19,6 +21,7 @@ function Home() {
             <br />
             <Nav />
             <br />
+            <TitleText />
             <InfoBody />
             <br /><br /><br /><br />
             <Footer />
