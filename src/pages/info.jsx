@@ -1,5 +1,5 @@
 
-import Header from '../components/header';
+import HeaderInfo from '../components/header_info';
 import '../components/header.css'
 
 import Nav from '../components/nav';
@@ -17,7 +17,7 @@ function Home() {
   return (
     <main>
         <div>
-            <Header />
+            <HeaderInfo />
             <br />
             <Nav />
             <br />
