@@ -1,4 +1,4 @@
-
+import { motion } from "framer-motion";
 import HeaderInfo from '../components/header_info';
 import '../components/header.css'
 
@@ -16,16 +16,24 @@ import '../components/footer.css'
 function Home() {
   return (
     <main>
-        <div>
-            <HeaderInfo />
-            <br />
-            <Nav />
-            <br />
-            <TitleText />
-            <InfoBody />
-            <br /><br /><br /><br />
-            <Footer />
-        </div>
+      <div>
+        <HeaderInfo />
+        <br />
+        <Nav />
+        <br />
+        {/* Animated content transition */}
+        <motion.div
+          initial={{ y: 200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -200, opacity: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
+          <TitleText />
+          <InfoBody />
+        </motion.div>
+        <br /><br /><br /><br />
+        <Footer />
+      </div>
     </main>
   );
 }
