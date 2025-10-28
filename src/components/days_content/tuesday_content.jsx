@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-function ThursdayContent() {
+function TuesdayContent() {
     return (
         <main>
             <center>
@@ -13,21 +13,21 @@ function ThursdayContent() {
                     >
                         <div className="menu_div1">
                             <div className="menu_sub_part_div1">
-                                <font className='menu_title_name'>
+                                <font className='font_menu_title_name'>
                                     Breakfast
                                 </font>
                             </div>
                             <div className="menu_sub_part_div2">
-                                <font className='menu_description'>
+                                <font className='font_menu_time'>
                                     07:00 - 10:00
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
-                                <font className='menu_description'>
+                                <font className='font_menu_description'>
                                     <ul>
-                                        <li>Dahi Bada, Alu Dam, Ghuguni</li>
-                                        <li>Bread, Jam, Butter</li>
-                                        <li>Tea</li>
+                                        <li>Pao Bhaji / Chole Bhature</li>
+                                        <li>Bread, Jam, Butter, Boiled Egg</li>
+                                        <li>Coffee</li>
                                     </ul>
                                 </font>
                             </div>
@@ -41,21 +41,21 @@ function ThursdayContent() {
                     >
                         <div className="menu_div2">
                             <div className="menu_sub_part_div1">
-                                <font className='menu_title_name'>
+                                <font className='font_menu_title_name'>
                                     Lunch
                                 </font>
                             </div>
                             <div className="menu_sub_part_div2">
-                                <font className='menu_description'>
+                                <font className='font_menu_time'>
                                     13:00 - 15:00
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
-                                <font className='menu_description'>
+                                <font className='font_menu_description'>
                                     <ul>
                                         <li>Rice, Roti, Dal, Mix Boiled Veg</li>
-                                        <li>Manchurian, Alu Capsicum dry</li>
-                                        <li>Papad & Curd</li>
+                                        <li>Matar Paneer, French Fries</li>
+                                        <li>Salad</li>
                                     </ul>
                                 </font>
                             </div>
@@ -69,20 +69,20 @@ function ThursdayContent() {
                     >
                         <div className="menu_div3">
                             <div className="menu_sub_part_div1">
-                                <font className='menu_title_name'>
+                                <font className='font_menu_title_name'>
                                     Snacks
                                 </font>
                             </div>
                             <div className="menu_sub_part_div2">
-                                <font className='menu_description'>
+                                <font className='font_menu_time'>
                                     18:00 - 19:00
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
-                                <font className='menu_description'>
+                                <font className='font_menu_description'>
                                     <ul>
-                                        <li>Masala Maggi</li>
-                                        <li>Coffee</li>
+                                        <li>Red Pasta (with onion & tomato)</li>
+                                        <li>Lemon Tea</li>
                                     </ul>
                                 </font>
                             </div>
@@ -96,21 +96,21 @@ function ThursdayContent() {
                     >
                         <div className="menu_div4">
                             <div className="menu_sub_part_div1">
-                                <font className='menu_title_name'>
+                                <font className='font_menu_title_name'>
                                     Dinner
                                 </font>
                             </div>
                             <div className="menu_sub_part_div2">
-                                <font className='menu_description'>
+                                <font className='font_menu_time'>
                                     20:00 - 22:00
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
-                                <font className='menu_description'>
+                                <font className='font_menu_description'>
                                     <ul>
                                         <li>Rice, Roti, Dal, Mix Boiled Veg</li>
-                                        <li>Paneer Hydrabadi, Egg Curry (Dry)</li>
-                                        <li>Gulab Jamun</li>
+                                        <li>Soyabean Alu Masala, Crispy Veg Chips</li>
+                                        <li>Semei Kheer</li>
                                     </ul>
                                 </font>
                             </div>
@@ -123,4 +123,4 @@ function ThursdayContent() {
     );
 }
 
-export default ThursdayContent;
+export default TuesdayContent;

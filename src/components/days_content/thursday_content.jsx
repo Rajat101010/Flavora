@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-function WednesdayContent() {
+function ThursdayContent() {
     return (
         <main>
             <center>
@@ -13,19 +13,19 @@ function WednesdayContent() {
                     >
                         <div className="menu_div1">
                             <div className="menu_sub_part_div1">
-                                <font className='menu_title_name'>
+                                <font className='font_menu_title_name'>
                                     Breakfast
                                 </font>
                             </div>
                             <div className="menu_sub_part_div2">
-                                <font className='menu_description'>
+                                <font className='font_menu_time'>
                                     07:00 - 10:00
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
-                                <font className='menu_description'>
+                                <font className='font_menu_description'>
                                     <ul>
-                                        <li>Egg Omlet, Veg Cutlet</li>
+                                        <li>Dahi Bada, Alu Dam, Ghuguni</li>
                                         <li>Bread, Jam, Butter</li>
                                         <li>Tea</li>
                                     </ul>
@@ -41,21 +41,21 @@ function WednesdayContent() {
                     >
                         <div className="menu_div2">
                             <div className="menu_sub_part_div1">
-                                <font className='menu_title_name'>
+                                <font className='font_menu_title_name'>
                                     Lunch
                                 </font>
                             </div>
                             <div className="menu_sub_part_div2">
-                                <font className='menu_description'>
+                                <font className='font_menu_time'>
                                     13:00 - 15:00
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
-                                <font className='menu_description'>
+                                <font className='font_menu_description'>
                                     <ul>
                                         <li>Rice, Roti, Dal, Mix Boiled Veg</li>
-                                        <li>Cabbage Alu Masala, Fish Masala</li>
-                                        <li>Frimes & Salad</li>
+                                        <li>Manchurian, Alu Capsicum dry</li>
+                                        <li>Papad & Curd</li>
                                     </ul>
                                 </font>
                             </div>
@@ -69,19 +69,19 @@ function WednesdayContent() {
                     >
                         <div className="menu_div3">
                             <div className="menu_sub_part_div1">
-                                <font className='menu_title_name'>
+                                <font className='font_menu_title_name'>
                                     Snacks
                                 </font>
                             </div>
                             <div className="menu_sub_part_div2">
-                                <font className='menu_description'>
+                                <font className='font_menu_time'>
                                     18:00 - 19:00
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
-                                <font className='menu_description'>
+                                <font className='font_menu_description'>
                                     <ul>
-                                        <li>Veg Hakka Noodles</li>
+                                        <li>Masala Maggi</li>
                                         <li>Coffee</li>
                                     </ul>
                                 </font>
@@ -96,21 +96,21 @@ function WednesdayContent() {
                     >
                         <div className="menu_div4">
                             <div className="menu_sub_part_div1">
-                                <font className='menu_title_name'>
+                                <font className='font_menu_title_name'>
                                     Dinner
                                 </font>
                             </div>
                             <div className="menu_sub_part_div2">
-                                <font className='menu_description'>
+                                <font className='font_menu_time'>
                                     20:00 - 22:00
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
-                                <font className='menu_description'>
+                                <font className='font_menu_description'>
                                     <ul>
                                         <li>Rice, Roti, Dal, Mix Boiled Veg</li>
-                                        <li>Chicken Masala, Paneer Masala</li>
-                                        <li>Rasgulla</li>
+                                        <li>Paneer Hydrabadi, Egg Curry (Dry)</li>
+                                        <li>Gulab Jamun</li>
                                     </ul>
                                 </font>
                             </div>
@@ -123,4 +123,4 @@ function WednesdayContent() {
     );
 }
 
-export default WednesdayContent;
+export default ThursdayContent;

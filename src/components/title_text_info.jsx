@@ -2,7 +2,7 @@ function TitleText() {
     return (
         <center>
             <div>
-                <font className='menu_title_name'>
+                <font className='font_title_text_for_info'>
                     Serving Information
                 </font>
                 <br /><br />

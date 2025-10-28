@@ -25,46 +25,48 @@
 .nav_div5,
 .nav_div6,
 .nav_div7 {
-    border: 1px solid #D3D3D3;
+    border: 1px solid #fafad2;
     border-radius: 5px;
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
+    background-color: #2C2C2C;
 }
 
 .nav_div1:hover {
-    background-color: #353535;
+    background-color: #3A3A3A;
 }
 
 .nav_div2:hover {
-    background-color: #353535;
+    background-color: #3A3A3A;
 }
 
 .nav_div3:hover {
-    background-color: #353535;
+    background-color: #3A3A3A;
 }
 
 .nav_div4:hover {
-    background-color: #353535;
+    background-color: #3A3A3A;
 }
 
 .nav_div5:hover {
-    background-color: #353535;
+    background-color: #3A3A3A;
 }
 
 .nav_div6:hover {
-    background-color: #353535;
+    background-color: #3A3A3A;
 }
 
 .nav_div7:hover {
-    background-color: #353535;
+    background-color: #3A3A3A;
 }
 
 .active {
-    background-color: #290404;
+    background-color: #b8860b;
 }
 
 .hr_for_all_Pages{
     height: 1px;
+    border: 1px solid #fafad2;
 }
 
 .weel_links{

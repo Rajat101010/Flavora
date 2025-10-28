@@ -51,7 +51,7 @@ function SwipePage({ children }) {
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
       style={{
-        height: "100vh",
+        height: "auto",
         width: "100%",
         overflow: "hidden",
         touchAction: "pan-y", // prevent scroll interference

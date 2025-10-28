@@ -1,10 +1,10 @@
 import Header from "../components/header";
 import "../components/header.css";
 
-import NavTuesday from '../components/nav_tuesday';
+import NavTuesday from '../components/days_nav/nav_tuesday';
 import '../components/nav.css'
 
-import TuesdayContent from '../components/tuesday_content';
+import TuesdayContent from '../components/days_content/tuesday_content';
 import '../components/all_content.css'
 
 import Footer from '../components/footer';

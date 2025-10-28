@@ -1,4 +1,4 @@
-.parent {
+.info_body_parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -8,7 +8,7 @@
 }
 
 @media(max-width: 768px) {
-    .parent {
+    .info_body_parent {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
@@ -18,11 +18,12 @@
     }
 }
 
-.div1,
-.div2,
-.div3 {
-    border: 1px solid #D3D3D3;
-    border-radius: 5px;
+.info_body_div1,
+.info_body_div2,
+.info_body_div3 {
+    border: 1px solid #fafad2;
+    background-color: #1E1E1E;
+    border-radius: 10px;
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
     text-align: left;

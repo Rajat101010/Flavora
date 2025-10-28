@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import Header from "../components/header";
 import "../components/header.css";
 
-import NavSunday from '../components/nav_sunday';
+import NavSunday from '../components/days_nav/nav_sunday';
 import '../components/nav.css'
 
-import SundayContent from '../components/sunday_content';
+import SundayContent from '../components/days_content/sunday_content';
 import '../components/all_content.css'
 
 import Footer from '../components/footer';

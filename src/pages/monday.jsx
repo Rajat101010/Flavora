@@ -1,10 +1,10 @@
 import Header from "../components/header";
 import "../components/header.css";
 
-import NavMonday from "../components/nav_monday";
+import NavMonday from "../components/days_nav/nav_monday";
 import "../components/nav.css";
 
-import MondayContent from "../components/monday_content";
+import MondayContent from "../components/days_content/monday_content";
 import "../components/all_content.css";
 
 import Footer from "../components/footer";
@@ -21,10 +21,7 @@ function Monday() {
         <NavMonday />
         <br />
         <MondayContent />
-        <br />
-        <br />
-        <br />
-        <br />
+        <br /><br /><br /><br />
         <Footer />
       </main>
     </SwipePage>
