@@ -17,28 +17,26 @@ function Wednesday() {
   return (
     <SwipePage>
       <main>
-        <div>
-          <Header />
-          <br />
-          <NavWednesday />
-          <br />
+        <Header />
+        <br />
+        <NavWednesday />
+        <br />
 
-          {/* Animated content transition */}
-          <motion.div
-            initial={{ y: 200, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -200, opacity: 0 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-          >
-            <WednesdayContent />
-          </motion.div>
+        {/* Animated content transition */}
+        <motion.div
+          initial={{ y: 200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -200, opacity: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
+          <WednesdayContent />
+        </motion.div>
 
-          <br />
-          <br />
-          <br />
-          <br />
-          <Footer />
-        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <Footer />
       </main>
     </SwipePage>
   );
