@@ -21,17 +21,7 @@ function Sunday() {
         <br />
         <NavSunday />
         <br />
-
-        {/* Animated content transition */}
-        <motion.div
-          initial={{ y: 200, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -200, opacity: 0 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-        >
-          <SundayContent />
-        </motion.div>
-
+        <SundayContent />
         <br />
         <br />
         <br />

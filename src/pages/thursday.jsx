@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import Header from "../components/header";
 import "../components/header.css";
 
@@ -22,17 +21,7 @@ function Thursday() {
           <br />
           <NavThursday />
           <br />
-
-          {/* Animated content transition */}
-          <motion.div
-            initial={{ y: 200, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -200, opacity: 0 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-          >
-            <ThursdayContent />
-          </motion.div>
-
+          <ThursdayContent />
           <br />
           <br />
           <br />
