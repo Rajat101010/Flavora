@@ -11,19 +11,23 @@ import '../components/all_content.css'
 import Footer from '../components/footer';
 import '../components/footer.css'
 
+import SwipePage from "../SwipePage";
+
 function Wednesday() {
   return (
-    <main>
+    <SwipePage>
+      <main>
         <div>
-            <Header />
-            <br />
-            <NavWednesday />
-            <br />
-            <WednesdayContent />
-            <br /><br /><br /><br />
-            <Footer />
+          <Header />
+          <br />
+          <NavWednesday />
+          <br />
+          <WednesdayContent />
+          <br /><br /><br /><br />
+          <Footer />
         </div>
-    </main>
+      </main>
+    </SwipePage>
   );
 }
 
