@@ -1,6 +1,21 @@
 import { motion } from "framer-motion";
 
+import Schedule from "../Schedule";
+
 function TuesdayContent() {
+    const breakfast = [
+        { start: "07:00", end: "10:00" }
+    ];
+    const lunch = [
+        { start: "13:00", end: "15:00" }
+    ];
+    const Snacks = [
+        { start: "18:00", end: "19:00" }
+    ];
+    const Dinner = [
+        { start: "20:00", end: "22:00" }
+    ];
+
     return (
         <main>
             <center>
@@ -19,7 +34,7 @@ function TuesdayContent() {
                             </div>
                             <div className="menu_sub_part_div2">
                                 <font className='font_menu_time'>
-                                    07:00 - 10:00
+                                    <Schedule dayIndex={2} timeSlots={breakfast} />
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
@@ -47,7 +62,7 @@ function TuesdayContent() {
                             </div>
                             <div className="menu_sub_part_div2">
                                 <font className='font_menu_time'>
-                                    13:00 - 15:00
+                                    <Schedule dayIndex={2} timeSlots={lunch} />
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
@@ -75,7 +90,7 @@ function TuesdayContent() {
                             </div>
                             <div className="menu_sub_part_div2">
                                 <font className='font_menu_time'>
-                                    18:00 - 19:00
+                                    <Schedule dayIndex={2} timeSlots={Snacks} />
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
@@ -102,7 +117,7 @@ function TuesdayContent() {
                             </div>
                             <div className="menu_sub_part_div2">
                                 <font className='font_menu_time'>
-                                    20:00 - 22:00
+                                    <Schedule dayIndex={2} timeSlots={Dinner} />
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
