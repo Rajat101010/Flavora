@@ -10,15 +10,34 @@ import { c_3Buses } from "./nav_c_3_content";
 
 function NowActiveBuses() {
     const now = new Date();
+    const day = now.getDay(); // 0 = Sunday, 6 = Saturday
 
-    // Combine all bus data
+    // ✅ Hooks must be at the top
+    const [fromFilter, setFromFilter] = useState("");
+    const [toFilter, setToFilter] = useState("");
+
+    // ✅ Combine all bus data
     const allBuses = [
         ...(c_25Buses || []).map((b) => ({ ...b, campus: "C 25" })),
         ...(c_15Buses || []).map((b) => ({ ...b, campus: "C 15" })),
         ...(c_3Buses || []).map((b) => ({ ...b, campus: "C 3" })),
     ];
 
-    // Filter active buses
+    // ✅ If weekend, show message only (don’t calculate buses)
+    if (day === 0 || day === 6) {
+        return (
+            <main>
+                <center style={{ marginTop: "60px" }}>
+                    <font className="font_menu_description">
+                        🚫 Bus services are inactive on weekends
+                        <br />(Saturday & Sunday)
+                    </font>
+                </center>
+            </main>
+        );
+    }
+
+    // ✅ Filter active buses
     const activeBuses = allBuses.filter((bus) => {
         const t = new Date();
         t.setHours(bus.time.h, bus.time.m, 0, 0);
@@ -26,15 +45,11 @@ function NowActiveBuses() {
         return diffMins <= 30 && diffMins >= -15;
     });
 
-    // Dropdown state
-    const [fromFilter, setFromFilter] = useState("");
-    const [toFilter, setToFilter] = useState("");
-
-    // Unique "from" and "to" options from active buses
+    // ✅ Unique dropdown options
     const uniqueFrom = [...new Set(activeBuses.map((b) => b.from))];
     const uniqueTo = [...new Set(activeBuses.map((b) => b.to))];
 
-    // Apply dropdown filters
+    // ✅ Apply filters
     const filteredBuses = activeBuses.filter((bus) => {
         const matchFrom = fromFilter ? bus.from === fromFilter : true;
         const matchTo = toFilter ? bus.to === toFilter : true;
@@ -52,7 +67,7 @@ function NowActiveBuses() {
                         style={{
                             padding: "6px 10px",
                             borderRadius: "5px",
-                            color:"white",
+                            color: "white",
                             border: "1px solid #fafad2",
                             backgroundColor: "#2C2C2C",
                             fontSize: "14px",
@@ -72,7 +87,7 @@ function NowActiveBuses() {
                         style={{
                             padding: "6px 10px",
                             borderRadius: "5px",
-                            color:"white",
+                            color: "white",
                             border: "1px solid #fafad2",
                             backgroundColor: "#2C2C2C",
                             fontSize: "14px",
