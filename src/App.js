@@ -32,9 +32,9 @@ function App() {
     <main style={{ backgroundColor: "#121212", height: "auto", minHeight: '100vh', color: "white" }}>
       <Router>
         <Routes>
-          <Route path="/" element={<Navigate to={`/${day}`} />} />
+          <Route path="/day" element={<Navigate to={`/${day}`} />} />
 
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Now />} />
           <Route path='/info' element={<Info />} />
           <Route path='/monday' element={<Monday />} />
           <Route path='/tuesday' element={<Tuesday />} />

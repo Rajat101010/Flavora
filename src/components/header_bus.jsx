@@ -11,7 +11,7 @@ function HeaderBus() {
           </font>
         </div>
         <div className='header_title_text'>
-          <a href="/">
+          <a href="/day">
             <div className="revolving-border">
               <IoFastFood />
             </div>
