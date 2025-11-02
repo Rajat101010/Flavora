@@ -10,8 +10,13 @@ function SwipePageBus({ children }) {
 
   const minSwipeDistance = 50; // minimum distance (px) to trigger swipe
 
-  const campus = ["bus-now", "bus-c_25", "bus-c_15_7_8", "bus-c_3"];
-  const currentCampus = location.pathname.replace("/", "").trim().toLowerCase();
+  const campus = ["", "bus-now", "bus-c_25", "bus-c_15_7_8", "bus-c_3"];
+  let currentCampus = location.pathname.replace("/", "").trim().toLowerCase();
+
+  // Treat "/" and "/bus-now" as the same page
+  if (currentCampus === "" || currentCampus === "bus-now") {
+    currentCampus = "bus-now";
+  }
   const currentIndex = campus.indexOf(currentCampus);
 
   useEffect(() => {
