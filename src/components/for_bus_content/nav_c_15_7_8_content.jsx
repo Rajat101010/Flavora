@@ -10,9 +10,9 @@ export const c_15Buses = [
     { id: 5, from: "H", to: "C 15, 7, 8", time: { h: 10, m: 30 }, busNo: "22 / W" },
     { id: 6, from: "H", to: "C 15, 7, 8", time: { h: 10, m: 40 }, busNo: "Mini" },
     { id: 7, from: "C 15, 7, 8", to: "H", time: { h: 12, m: 30 }, busNo: "22 / W" },
-    { id: 8, from: "C 15, 7, 8", to: "H", time: { h: 12, m: 40 }, busNo: "Mini" },
+    { id: 8, from: "C 15, 3", to: "H", time: { h: 12, m: 40 }, busNo: "Mini" },
     { id: 9, from: "H", to: "C 15, 7, 8", time: { h: 12, m: 50 }, busNo: "22 / W" },
-    { id: 10, from: "C 15, 7, 8", to: "H", time: { h: 13, m: 30 }, busNo: "22 / W" },
+    { id: 10, from: "C 7, 8", to: "H", time: { h: 13, m: 30 }, busNo: "22 / W" },
 ];
 
 function C25Content() {
