@@ -4,10 +4,11 @@ import { useNavigate, useLocation } from "react-router-dom";
 function SwipePageBus({ children }) {
   const navigate = useNavigate();
   const location = useLocation();
-  const [touchStart, setTouchStart] = useState(0);
-  const [touchEnd, setTouchEnd] = useState(0);
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchStartY, setTouchStartY] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
 
-  const minSwipeDistance = 50;
+  const minSwipeDistance = 50; // minimum distance (px) to trigger swipe
 
   const campus = ["bus-now", "bus-c_25", "bus-c_15_7_8", "bus-c_3"];
   const currentCampus = location.pathname.replace("/", "").trim().toLowerCase();
@@ -15,53 +16,51 @@ function SwipePageBus({ children }) {
 
   useEffect(() => {
     const handleTouchStart = (e) => {
-      setTouchStart(e.touches[0].clientX);
-      setTouchEnd(e.touches[0].clientX);
+      setTouchStartX(e.touches[0].clientX);
+      setTouchStartY(e.touches[0].clientY);
+      setTouchEndX(e.touches[0].clientX);
     };
 
     const handleTouchMove = (e) => {
-      // detect horizontal move only
-      const xMove = e.touches[0].clientX;
-      const yMove = e.touches[0].clientY;
-      const xDiff = Math.abs(xMove - touchStart);
-      const yDiff = Math.abs(yMove - (e.touches[0].clientY || 0));
-
-      // Only prevent default if it's more horizontal than vertical
-      if (xDiff > yDiff) e.preventDefault();
-
-      setTouchEnd(xMove);
+      setTouchEndX(e.touches[0].clientX);
     };
 
-    const handleTouchEnd = () => {
-      const distance = touchEnd - touchStart;
+    const handleTouchEnd = (e) => {
+      const endY = e.changedTouches[0].clientY;
+      const distanceX = touchEndX - touchStartX;
+      const distanceY = Math.abs(endY - touchStartY);
 
-      if (Math.abs(distance) < minSwipeDistance || currentIndex === -1) return;
+      // Ignore mostly vertical gestures (scroll)
+      if (Math.abs(distanceX) < Math.abs(distanceY)) return;
 
-      if (distance > 0 && currentIndex > 0) {
-        navigate(`/${campus[currentIndex - 1]}`);
-      } else if (distance < 0 && currentIndex < campus.length - 1) {
-        navigate(`/${campus[currentIndex + 1]}`);
+      if (Math.abs(distanceX) > minSwipeDistance && currentIndex !== -1) {
+        if (distanceX > 0 && currentIndex > 0) {
+          navigate(`/${campus[currentIndex - 1]}`);
+        } else if (distanceX < 0 && currentIndex < campus.length - 1) {
+          navigate(`/${campus[currentIndex + 1]}`);
+        }
       }
     };
 
-    window.addEventListener("touchstart", handleTouchStart, { passive: false });
-    window.addEventListener("touchmove", handleTouchMove, { passive: false });
-    window.addEventListener("touchend", handleTouchEnd);
+    window.addEventListener("touchstart", handleTouchStart, { passive: true });
+    window.addEventListener("touchmove", handleTouchMove, { passive: true });
+    window.addEventListener("touchend", handleTouchEnd, { passive: true });
 
     return () => {
       window.removeEventListener("touchstart", handleTouchStart);
       window.removeEventListener("touchmove", handleTouchMove);
       window.removeEventListener("touchend", handleTouchEnd);
     };
-  }, [touchStart, touchEnd, currentIndex, navigate]);
+  }, [touchStartX, touchStartY, touchEndX, currentIndex, navigate]);
 
   return (
     <div
       style={{
         height: "auto",
         width: "100%",
-        overflow: "hidden",
-        touchAction: "pan-y",
+        overflowY: "auto",
+        overflowX: "hidden",
+        touchAction: "pan-y", // allows vertical scroll
       }}
     >
       {children}
