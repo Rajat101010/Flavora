@@ -29,7 +29,6 @@
     display: grid;
     background-color: #1E1E1E;
     grid-template-columns: repeat(2, 1fr);
-
 }
 
 .menu_title_name {
@@ -52,8 +51,23 @@
 
 .menu_sub_part_div3 {
     grid-column: span 2 / span 2;
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu_sub_part_div2 {
     text-align: right;
+}
+
+.bus_number_section{
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.bus_number{
+    margin-left: 0.5rem;
+    background-color: #b8860b;
+    padding: 0.2rem;
+    padding-top: 0.1rem;
+    border-radius: 3px;
 }

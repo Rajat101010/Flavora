@@ -55,6 +55,20 @@
     }
 }
 
+.font_bus_no{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media(max-width: 768px){
+    .font_bus_no{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+}
+
 .font_menu_time {
     color: #B0B0B0;
     font-size: 0.9rem;

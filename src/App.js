@@ -1,6 +1,7 @@
 import './App.css';
 
 import './components/font/fonts.css'
+import "./RevolvingBorder.css";
 
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
@@ -17,11 +18,18 @@ import Friday from './pages/friday';
 import Saturday from './pages/saturday';
 import Sunday from './pages/sunday';
 
+import Now from './pages_bus/now';
+import C25 from './pages_bus/c_25';
+import C15 from './pages_bus/c_15_7_8';
+import C3 from './pages_bus/c_3';
+
+import InfoBus from './pages_bus/info_bus';
+
 function App() {
   const day = dayjs().format("dddd").toLowerCase();
 
   return (
-    <main style={{ backgroundColor: "#121212", height: "auto", minHeight:'100vh',  color: "white"}}>
+    <main style={{ backgroundColor: "#121212", height: "auto", minHeight: '100vh', color: "white" }}>
       <Router>
         <Routes>
           <Route path="/" element={<Navigate to={`/${day}`} />} />
@@ -35,6 +43,12 @@ function App() {
           <Route path='/friday' element={<Friday />} />
           <Route path='/saturday' element={<Saturday />} />
           <Route path='/sunday' element={<Sunday />} />
+
+          <Route path='/info-bus' element={<InfoBus />} />
+          <Route path='/bus-now' element={<Now />} />
+          <Route path='/bus-c_25' element={<C25 />} />
+          <Route path='/bus-c_15_7_8' element={<C15 />} />
+          <Route path='/bus-c_3' element={<C3 />} />
         </Routes>
       </Router>
     </main>

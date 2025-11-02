@@ -1,4 +1,5 @@
 import { IoMdInformationCircle } from "react-icons/io";
+import { FaBusAlt } from "react-icons/fa";
 
 function Header() {
   return (
@@ -8,6 +9,13 @@ function Header() {
           <font className='font_app_name'>
             Flavora
           </font>
+        </div>
+        <div className='header_title_text'>
+          <a href="/bus-now">
+            <div className="revolving-border">
+              <FaBusAlt />
+            </div>
+          </a>
         </div>
       </div>
       <div className='header_second_parent'>

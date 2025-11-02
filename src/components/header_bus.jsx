@@ -1,7 +1,7 @@
 import { IoMdInformationCircleOutline } from "react-icons/io";
-import { FaBusAlt } from "react-icons/fa";
+import { IoFastFood } from "react-icons/io5";
 
-function Header() {
+function HeaderBus() {
   return (
     <main>
       <div className="header_top_for_all_pages">
@@ -11,9 +11,9 @@ function Header() {
           </font>
         </div>
         <div className='header_title_text'>
-          <a href="/bus-now">
+          <a href="/">
             <div className="revolving-border">
-              <FaBusAlt />
+              <IoFastFood />
             </div>
           </a>
         </div>
@@ -25,11 +25,11 @@ function Header() {
           </font>
           <br />
           <font className='font_mess_menu'>
-            Mess Menu
+            Bus Details
           </font>
         </div>
         <div className='header_second_div2'>
-          <a href="/info">
+          <a href="/info-bus">
             <font className='font_info_icon'>
               <IoMdInformationCircleOutline />
             </font>
@@ -40,4 +40,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderBus;

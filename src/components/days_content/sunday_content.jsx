@@ -34,7 +34,7 @@ function SundayContent() {
                             </div>
                             <div className="menu_sub_part_div2">
                                 <font className='font_menu_time'>
-                                    <Schedule dayIndex={7} timeSlots={breakfast} />
+                                    <Schedule dayIndex={0} timeSlots={breakfast} />
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
@@ -62,7 +62,7 @@ function SundayContent() {
                             </div>
                             <div className="menu_sub_part_div2">
                                 <font className='font_menu_time'>
-                                    <Schedule dayIndex={7} timeSlots={lunch} />
+                                    <Schedule dayIndex={0} timeSlots={lunch} />
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
@@ -90,7 +90,7 @@ function SundayContent() {
                             </div>
                             <div className="menu_sub_part_div2">
                                 <font className='font_menu_time'>
-                                    <Schedule dayIndex={7} timeSlots={Snacks} />
+                                    <Schedule dayIndex={0} timeSlots={Snacks} />
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
@@ -117,7 +117,7 @@ function SundayContent() {
                             </div>
                             <div className="menu_sub_part_div2">
                                 <font className='font_menu_time'>
-                                    <Schedule dayIndex={7} timeSlots={Dinner} />
+                                    <Schedule dayIndex={0} timeSlots={Dinner} />
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
