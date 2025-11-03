@@ -15,13 +15,14 @@ export const c_25Buses = [
     { id: 10, from: "H", to: "C 25", time: { h: 12, m: 40 }, busNo: "32" },
     { id: 11, from: "C 25", to: "H", time: { h: 13, m: 10 }, busNo: "32" },
     { id: 12, from: "H", to: "C 25", time: { h: 13, m: 40 }, busNo: "15 / 71" },
-    { id: 13, from: "C 25", to: "H", time: { h: 14, m: 10 }, busNo: "15 / 71" },
-    { id: 14, from: "C 25", to: "H", time: { h: 14, m: 10 }, busNo: "72" },
-    { id: 15, from: "H", to: "C 25", time: { h: 14, m: 15 }, busNo: "32" },
+    { id: 13, from: "H", to: "C 25", time: { h: 13, m: 40 }, busNo: "72" },
+    { id: 14, from: "C 25", to: "H", time: { h: 14, m: 10 }, busNo: "15 / 71" },
+    { id: 15, from: "C 25", to: "H", time: { h: 14, m: 10 }, busNo: "72" },
     { id: 16, from: "H", to: "C 25", time: { h: 14, m: 40 }, busNo: "72" },
     { id: 17, from: "H", to: "C 25", time: { h: 14, m: 40 }, busNo: "15 / 71" },
-    { id: 18, from: "C 25", to: "H", time: { h: 17, m: 25 }, busNo: "72" },
-    { id: 19, from: "C 25", to: "H", time: { h: 17, m: 30 }, busNo: "32" },
+    { id: 18, from: "H", to: "C 25", time: { h: 14, m: 50 }, busNo: "32" },
+    { id: 19, from: "C 25", to: "H", time: { h: 17, m: 25 }, busNo: "72" },
+    { id: 20, from: "C 25", to: "H", time: { h: 17, m: 30 }, busNo: "32" },
 ];
 
 function C25Content() {
