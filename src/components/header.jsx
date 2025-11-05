@@ -10,13 +10,13 @@ function Header() {
             Flavora
           </font>
         </div>
-        <div className='header_title_text'>
+        {/* <div className='header_title_text'>
           <a href="/bus-now">
             <div className="revolving-border">
               <FaBusAlt />
             </div>
           </a>
-        </div>
+        </div> */}
       </div>
       <div className='header_second_parent'>
         <div className='header_intro'>

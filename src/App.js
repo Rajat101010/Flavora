@@ -34,7 +34,7 @@ function App() {
         <Routes>
           <Route path="/day" element={<Navigate to={`/${day}`} />} />
 
-          <Route path='/' element={<Now />} />
+          <Route path='/' element={<Home />} />
           <Route path='/info' element={<Info />} />
           <Route path='/monday' element={<Monday />} />
           <Route path='/tuesday' element={<Tuesday />} />
